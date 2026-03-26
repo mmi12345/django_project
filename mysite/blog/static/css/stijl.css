@@ -1,0 +1,44 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    background-color: #a72525;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+}
+
+/* HEADER */
+header {
+    background-color: #ffa700;
+    padding: 50px;
+}
+
+/* TITLE */
+h1 {
+    font-weight: 900;
+}
+
+.my-container {
+    background-color: #ffc1cc;
+}
+
+.post {
+    border: 3px solid white;
+}
+
+/* LINKS */
+h2 a {
+    color: #ffa700;
+    text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+    background-color: #ffa700;
+    height: 80px;
+}
