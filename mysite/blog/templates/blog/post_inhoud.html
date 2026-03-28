@@ -1,22 +1,19 @@
 {% extends 'blog/base.html' %}
 
 {% block inhoud %}
-{% for post in posts %}
 
-<article class="post mb-4">
+<article class="post">
 
+    {% if post.published_date %}
     <time class="date d-block mb-2">
         {{ post.published_date }}
     </time>
-    <h2>
-        <a href="{% url 'post_inhoud' pk=post.pk %}">
-            {{ post.title }}
-        </a>
-    </h2>
+    {% endif %}
+
+    <h2>{{ post.title }}</h2>
 
     <p>{{ post.text|linebreaksbr }}</p>
 
 </article>
 
-{% endfor %}
 {% endblock %}
